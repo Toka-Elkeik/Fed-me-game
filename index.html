@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Fed a Star Mole</title>
+  </head>
+  <body>
+    <div>
+        <button class="play-btn">Play</button>
+    </div>
+    <div class="container hide" > 
+      <div class="worm-box">
+        <div class="worm-container" style="width: 10%;">
+          <img class="worm-image" src="./Images/worm.png" alt="Progress">
+        </div>
+      </div>  
+      <div class="holes">
+        <div class="row">
+          <div class="hole" id="hole-0">
+            <img
+              class="mole-imgs hungry"
+              data-index="0"
+              src="./Images/king-mole-hungry.png"
+              alt=""
+            />
+          </div>
+          <div class="hole" id="hole-1">
+            <img
+              class="mole-imgs"
+              data-index="1"
+              src="./Images/king-mole-leaving.png"
+              alt=""
+            />
+          </div>
+          <div class="hole" id="hole-2">
+            <img
+              class="mole-imgs"
+              data-index="2"
+              src="./Images/king-mole-sad.png"
+              alt="mole"
+            />
+          </div>
+          <div class="hole" id="hole-3">
+            <img
+              class="mole-imgs"
+              data-index="3"
+              src="./Images/mole-fed.png"
+              alt="mole"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="hole" id="hole-4">
+            <img
+              class="mole-imgs"
+              data-index="4"
+              src="./Images/mole-hungry.png"
+              alt="mole"
+            />
+          </div>
+          <div class="hole" id="hole-5">
+            <img
+              class="mole-imgs"
+              data-index="5"
+              src="./Images/mole-leaving.png"
+              alt="mole"
+            />
+          </div>
+          <div class="hole" id="hole-6">
+            <img
+              class="mole-imgs"
+              data-index="6"
+              src="./Images/mole-sad.png"
+              alt="mole"
+            />
+          </div>
+          <div class="hole" id="hole-7">
+            <img
+              class="mole-imgs"
+              data-index="7"
+              src="./Images/king-mole-sad.png"
+              alt="mole"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="hole" id="hole-8">
+            <img
+              class="mole-imgs"
+              data-index="8"
+              src="./Images/king-mole-leaving.png"
+              alt="mole"
+            />
+          </div>
+          <div class="hole" id="hole-9">
+            <img
+              class="mole-imgs"
+              data-index="9"
+              src="./Images/king-mole-hungry.png"
+              alt="mole"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <img class="win hide" src="./Images/win.png" alt="YOU WIN"></div>
+    <button class="play-again-btn hide" onclick="window.location.href = 'index.html'">Play Again</button>
+    <script src="fed.js"></script>
+  </body>
+</html>

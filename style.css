@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  cursor: url(./Images/cursor.png), default;
+  background-color: #c0c86d;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.play-btn,
+.play-again-btn {
+  cursor: url(./Images/cursor.png), default;
+  color: white;
+  font-size: 1.5rem;
+  background-color: #ed3e38;
+  height: 80px;
+  width: 160px;
+  border: none;
+  border-radius: 5%;
+  position: absolute;
+}
+.play-btn:hover,
+.play-again-btn:hover {
+  background-color: #ffbe9c;
+  cursor: url(./Images/cursor-worm.png), default;
+}
+.play-btn {
+  margin: -40px 0 0 -80px;
+}
+.container {
+  background-image: url(images/background.png);
+  width: 1344px;
+  height: 756px;
+  background-size: 1344px 756px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.hole {
+  background-color: black;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  margin: 20px;
+}
+.hole img {
+  width: 100%;
+}
+.mole-imgs {
+  -webkit-animation: rotator 2s infinite linear;
+}
+
+@keyframes rotator {
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+.hungry {
+  cursor: url(./Images/cursor-worm.png), default;
+}
+.gone {
+  display: none;
+}
+.hide {
+  display: none;
+}
+
+.win {
+  height: 80vh;
+  -webkit-animation: fadeIn 2s, rotator 2s infinite linear;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.worm-image {
+  width: 1000px;
+}
+.worm-box {
+  width: 1000px;
+  margin: 20px 0 0 20px;
+}
+.worm-container {
+  overflow: hidden;
+  -webkit-transition: width 1s ease-in-out;
+}
